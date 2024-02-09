@@ -8,7 +8,7 @@ def filter_rule(event, context):
          event (dict): Event payload.
          context (google.cloud.functions.Context): Metadata for the event.
     """
-    URL = "https://hooks.slack.com/services/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"
+    URL = "https://hooks.slack.com/services/T024FQ3UW/B05TM8xxxxx"
     HEADERS = {"content-type":"application/json"}
     pubsub_message = base64.b64decode(event['data']).decode('utf-8')
     parsed = json.loads(pubsub_message)
